@@ -1,3 +1,3 @@
-(function(){
-  angular.module('demoApp',['mainController']);
-})():
+(function() {
+    angular.module('demoApp', ['mainController']);
+})();
