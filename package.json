@@ -1,0 +1,16 @@
+{
+  "name": "demoapplication",
+  "version": "1.0.0",
+  "description": "Demo App for Angular",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Tattersall",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1"
+  }
+}
