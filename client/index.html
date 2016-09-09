@@ -3,13 +3,14 @@
 
 <head>
     <title>Demo Application</title>
+    <script src="angular.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/mainController.js"></script>
 </head>
 <html ng-app="demoApp">
 
-<body>
-    <header>{{message}}</header>
+<body ng-controller="mainController">
+    <header> Hello: {{message}} </header>
 </body>
 
 </html>

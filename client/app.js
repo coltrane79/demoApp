@@ -1,3 +1,3 @@
 (function() {
-    angular.module('demoApp', ['mainController']);
+    angular.module('demoApp', []);
 })();
