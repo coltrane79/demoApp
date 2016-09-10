@@ -10,15 +10,16 @@
 </head>
 <html ng-app="demoApp">
 
-<body ng-controller="mainController">
+<body ng-controller="mainController as mainCtrl">
     <header> Hello: {{message}} </header>
     <div class="navbar">
       <ul>
-        <li><a href="">Daily</a></li>
-        <li><a href="">People</a></li>
-        <li><a href="">Accounts Payable</a></li>
-        <li><a href="">Account Receivable</a></li>
+        <li ng-click="mainCtrl.settab(0)"><a href="">Daily</a></li>
+        <li ng-click="mainCtrl.settab(1)"><a href="">People</a></li>
+        <li ng-click="mainCtrl.settab(2)"><a href="">Accounts Payable</a></li>
+        <li ng-click="mainCtrl.settab(3)"><a href="">Account Receivable</a></li>
       </ul>
+      <p>{{tab}}</p>
     </div>
     <footer class="footer"></footer>
 </body>
