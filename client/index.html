@@ -4,6 +4,7 @@
 <head>
     <title>Demo Application</title>
     <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/mainController.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,15 +12,23 @@
 <html ng-app="demoApp">
 
 <body ng-controller="mainController as mainCtrl">
-    <header> Hello: {{message}} </header>
+    <header>
+        <img class="logo" src="assets/center-alignment.svg">
+        <h1>{{appTitle}}</h1>
+        <div class="search">
+            <input type="text" placeholder="search...">
+        </div>
+    </header>
     <div class="navbar">
-      <ul>
-        <li ng-click="mainCtrl.settab(0)"><a href="">Daily</a></li>
-        <li ng-click="mainCtrl.settab(1)"><a href="">People</a></li>
-        <li ng-click="mainCtrl.settab(2)"><a href="">Accounts Payable</a></li>
-        <li ng-click="mainCtrl.settab(3)"><a href="">Account Receivable</a></li>
-      </ul>
-      <p>{{tab}}</p>
+        <ul>
+            <li ng-click="mainCtrl.settab(0)"><a href="#/daily">Daily</a></li>
+            <li ng-click="mainCtrl.settab(1)"><a href="#/people">People</a></li>
+            <li ng-click="mainCtrl.settab(2)"><a href="#/ap">Accounts Payable</a></li>
+            <li ng-click="mainCtrl.settab(3)"><a href="#/ar">Account Receivable</a></li>
+        </ul>
+        <p>{{tab}}</p>
+    </div>
+    <div ng-view>
     </div>
     <footer class="footer"></footer>
 </body>

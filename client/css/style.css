@@ -1,22 +1,40 @@
-html, body, div, h1, h2, h3, h5, h6, header, ul, li {
+html, body, div, h1, h2, h3, h5, h6, header, ul, li, img, footer {
     padding: 0;
     margin: 0;
     border: 0;
 }
+
+html {
+  height: 100;
+}
+
+body {
+  height: 100;
+  margin: 0;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%) fixed;
+
+}
+
 header {
-    background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+    width: 100%;
     display: flex;
     align-items: center;
     color: white;
     height: 50px;
     margin-bottom: 0px;
-    font-family: helvetica,arial;
+    font-family: helvetica, arial;
     font-weight: bold;
+    font-size: 26px;
+}
+h1 {
     font-size: 20px;
+    padding-right: 885px;
 }
 .navbar {}
 .navbar ul {
-    font-family: helvetica,arial;
+    font-family: helvetica, arial;
     list-style-type: none;
     height: 40px;
     background-color: hsla(208, 27%, 5%, 1);
@@ -28,20 +46,36 @@ header {
 .navbar ul li a {
     text-decoration: none;
     text-align: center;
-    color:white;
+    color: white;
     height: 40px;
     display: flex;
     align-items: center;
     padding-top: 0px;
-    pading-left: 20px;
+    padding-right: 20px;
 }
 .navbar a:hover {
     background-color: hsla(360, 100%, 25%, 0.62);
 }
 .footer {
     position: absolute;
-    background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
     bottom: 0;
     width: 100%;
     height: 40px;
+}
+.logo {
+    postiion: relative;
+    padding-right: 10px;
+    float: right;
+    height: 50px;
+    width: 40px;
+}
+.search {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.hnavbar {
+  
 }
