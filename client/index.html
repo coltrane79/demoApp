@@ -6,11 +6,21 @@
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/mainController.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <html ng-app="demoApp">
 
 <body ng-controller="mainController">
     <header> Hello: {{message}} </header>
+    <div class="navbar">
+      <ul>
+        <li><a href="">Daily</a></li>
+        <li><a href="">People</a></li>
+        <li><a href="">Accounts Payable</a></li>
+        <li><a href="">Account Receivable</a></li>
+      </ul>
+    </div>
+    <footer class="footer"></footer>
 </body>
 
 </html>
